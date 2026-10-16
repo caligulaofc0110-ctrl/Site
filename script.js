@@ -1,5 +1,5 @@
 
-const API_URL = "https://sua-api.onrender.com";
+const API_URL = "https://apiofc.onrender.com/";
 
 const lista = document.getElementById("lista-alunos");
 const total = document.getElementById("total-alunos");

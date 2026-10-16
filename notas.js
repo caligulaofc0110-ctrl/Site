@@ -1,5 +1,5 @@
 
-const API_URL = "https://sua-api.onrender.com";
+const API_URL = "https://apiofc.onrender.com/";
 
 const parametros = new URLSearchParams(window.location.search);
 const idAluno = parametros.get("id");

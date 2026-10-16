@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notas Escolares</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topo">
+    <div class="container topo-conteudo">
+      <div class="marca">
+        <span class="marca-icone">N</span>
+        <span>Notas<span class="marca-destaque">Escolares</span></span>
+      </div>
+
+      <a href="notas.html" class="botao botao-secundario voltar-topo">
+        Gerenciar notas
+      </a>
+    </div>
+  </header>
+
+  <main class="container principal">
+    <section class="apresentacao">
+      <span class="etiqueta">ÁREA ACADÊMICA</span>
+      <h1>Notas dos alunos</h1>
+      <p>Consulte os alunos e gerencie suas notas bimestrais.</p>
+    </section>
+
+    <section class="resumo">
+      <article class="cartao-resumo">
+        <div>
+          <span class="resumo-titulo">Alunos cadastrados</span>
+          <strong id="total-alunos">—</strong>
+        </div>
+        <span class="resumo-icone azul">♙</span>
+      </article>
+
+      <article class="cartao-resumo">
+        <div>
+          <span class="resumo-titulo">Bimestres</span>
+          <strong>1º e 2º</strong>
+        </div>
+        <span class="resumo-icone verde">▤</span>
+      </article>
+    </section>
+
+    <section class="painel">
+      <div class="painel-cabecalho">
+        <div>
+          <h2>Lista de alunos</h2>
+          <p>Escolha um aluno para consultar ou alterar as notas.</p>
+        </div>
+
+        <button
+          type="button"
+          id="btn-atualizar"
+          class="botao botao-secundario">
+          ↻ Atualizar lista
+        </button>
+      </div>
+
+      <div class="busca">
+        <label for="pesquisa">Buscar aluno</label>
+        <input
+          type="search"
+          id="pesquisa"
+          placeholder="Digite o nome do aluno..."
+          autocomplete="off">
+      </div>
+
+      <p
+        id="mensagem-lista"
+        class="mensagem"
+        role="status"
+        aria-live="polite">
+      </p>
+
+      <div class="tabela-area">
+        <table>
+          <thead>
+            <tr>
+              <th>Aluno</th>
+              <th>1º bimestre</th>
+              <th>2º bimestre</th>
+              <th>Ação</th>
+            </tr>
+          </thead>
+
+          <tbody id="lista-alunos">
+            <tr>
+              <td colspan="4" class="vazio">
+                Carregando alunos...
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>
+      Sistema de estudo · Consulta de notas escolares
+    </footer>
+  </main>
+</body>
+</html>
